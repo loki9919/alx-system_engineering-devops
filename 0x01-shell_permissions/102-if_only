@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo %U guilloume chown betty hello
+chown --from=guillaume betty hello
