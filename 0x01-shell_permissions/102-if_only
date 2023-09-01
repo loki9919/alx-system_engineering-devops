@@ -1,2 +1,2 @@
 #!/bin/bash
-(stat %U hello) = guilloume chown betty hello
+sudo %U guilloume chown betty hello
