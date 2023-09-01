@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod vincent . chgrp staff .
+sudo chmod vincent staff
