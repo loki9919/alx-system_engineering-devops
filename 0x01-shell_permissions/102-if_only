@@ -1,2 +1,2 @@
 #!/bin/bash
-stat hello = guilloume chown betty hello
+(stat %U hello) = guilloume chown betty hello
