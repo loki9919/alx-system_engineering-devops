@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo -l guillaume chown betty hello
+if [ stat hello = guilloume ] then chown betty hello
