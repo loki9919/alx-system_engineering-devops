@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ stat hello = guilloume ] then chown betty hello
+stat hello = guilloume chown betty hello
