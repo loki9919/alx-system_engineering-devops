@@ -6,7 +6,7 @@ while [ $count -lt 10 ]; do
 	then
 		echo "Best School"
 	else
-		echo "Hi"
+		echo -e "Best School\nHi"
 	fi
 	((count++))
 done
