@@ -2,18 +2,8 @@
 # fix the container so that Nginx is running as the nginx user and
 #+ listening on all active IPs on port 8080
 
-# Install necessary packages
-sudo apt-get update
-sudo apt-get install -y nginx
-
-# Stop nginx service
-sudo service nginx stop
-
-# Configure nginx to run as nginx user
-sed -i 's/user www-data;/user nginx;/' /etc/nginx/nginx.conf
-
-# Configure nginx to listen on all active IPs on port 8080
-sed -i 's/listen\s*80;/listen *:8080;/g' /etc/nginx/sites-available/default
-
-# Start nginx service
-sudo service nginx start
+sudo sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
+sudo sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+sudo chmod 644 /etc/nginx/nginx.conf
+sudo pkill apache2
+sudo -u nginx service nginx start
