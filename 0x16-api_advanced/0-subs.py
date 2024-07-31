@@ -7,8 +7,6 @@ import requests
 
 def number_of_subscribers(subreddit):
     """Returns the number of subscribers for a given subreddit."""
-
-
     try:
         headers = {"User-Agent": "/u/Feisty-Musician7531"}
         with requests.get(
